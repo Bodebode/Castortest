@@ -1,7 +1,7 @@
-Feature: Business rules
+Feature: Practice tests 1
   In order to achieve my goals
-  As a persona
-  I want to be able to interact with a system
+  As a QA in Castor
+  I want Input test data into the forms
 
   Scenario: do something
     Given I have a defined step

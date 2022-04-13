@@ -2,10 +2,13 @@ const assert = require('assert');
 
 Feature('newtest');
 
-Scenario('test something', async({ I }) => {
+let scenarioConfig = Scenario('test something', async({ I }) => {
     I.amOnPage('https://www.google.com/');
+    //I.waitForText('I agree')
+    I.click('I agree')
+    //I.click('document.querySelector("#L2AGLb > div")')
     I.waitForText('Search');
-    I.see('Google');
+   // I.see('Google');
     I.fillField('body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input', 'Bode Nathaniel Iwaju Music Video youtube ');
     I.wait(1)
     I.pressKey('Enter')
@@ -21,7 +24,7 @@ Scenario('test something', async({ I }) => {
     I.wait(3)
     I.waitForValue('Bode Nathaniel')
     I.waitForResponse()*/
-});
+})
 
 
 Given(/^I am on the website$/, function () {
@@ -32,4 +35,16 @@ When(/^I click a button$/, function () {
 });
 Then(/^I see something$/, function () {
     I.see('Text input');
+});
+
+const { I } = inject();
+
+Given(/^I have a opened the Castor Report webapp\.$/, function () {
+    I.amOnPage("https://www.castoredc.com/")
+});
+When(/^The page loads$/, function () {
+    I.click("//*[@id=\"CybotCookiebotDialogBodyButtonAccept\"]")
+});
+Then(/^I see the homepage$/, function () {
+    I.seeInTitle('Castor')
 });

@@ -6,3 +6,6 @@ I.waitForElement('#tsf > div:nth-child(1) > div.A8SBwf > div.RNNXgb > div.GeTMDd
 <<< Recorded commands on Mon Feb 21 2022 15:57:41 GMT+0100 (West Africa Standard Time)
 I.wait('/html/body/div[4]/div[2]/form/div[1]/div[1]/div[2]/div[1]/div/div[2]/input')
 I.see('Search')
+
+<<< Recorded commands on Sun Apr 10 2022 20:10:00 GMT+0100 (British Summer Time)
+I.click('I agree');

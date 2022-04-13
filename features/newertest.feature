@@ -1,4 +1,4 @@
-  Feature: Practice tests
+  Feature: Practice tests 2
   In order to achieve my goals
   As a persona
   I want to be able to interact with a system
